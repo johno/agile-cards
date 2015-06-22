@@ -23,12 +23,12 @@
   </div>
 </div>
 {{#if isEditing}}
-  <div class="border-top px1 py2" id="form">
+  <div class="border-top px1 py2 bg-{{bgColor}} {{textColor}}" id="form">
     <div class="container">
       <label>Background Color</label>
       {{#x-select value=bgColor class="block full-width field-light mb1"}}
         {{#each color in colors}}
-          {{#x-option value=color}}{{color}}{{/x-option}}
+          {{#x-option value=color class=color}}{{color}}{{/x-option}}
         {{/each}}
       {{/x-select}}
 
