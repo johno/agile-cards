@@ -1,4 +1,5 @@
 /* jshint node: true */
+var colorList = require('css-color-list');
 
 module.exports = function(environment) {
   var ENV = {
@@ -6,6 +7,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    colors: colorList(),
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
