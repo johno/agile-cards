@@ -26,6 +26,7 @@
     "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-cssnext": "0.0.2",
     "ember-cli-dependency-checker": "^1.0.0",
+    "ember-cli-divshot": "0.1.7",
     "ember-cli-focus-input": "1.0.0",
     "ember-cli-htmlbars": "0.7.6",
     "ember-cli-ic-ajax": "0.1.1",
