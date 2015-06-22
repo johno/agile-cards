@@ -2,11 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   isEditing: false,
-  minValue: 0,
-  maxValue: 21,
-  value: 1,
+  minValue: 2,
+  maxValue: 8,
+  value: 2,
   bgColor: 'tomato',
   textColor: 'white',
+
+  fibValue: Ember.computed('value', function() {
+    return fib(this.get('value'));
+  }),
 
   colors: function() {
     return Object.keys(colorsMap);
@@ -40,6 +44,14 @@ export default Ember.Component.extend({
     },
   }
 });
+
+var fib = function(n) {
+  if(n <= 2) {
+    return 1;
+  } else {
+    return fib(n - 1) + fib(n - 2);
+  }
+};
 
 var colorsMap = {
  "aqua": "#00ffff",
